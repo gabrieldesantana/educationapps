@@ -157,7 +157,6 @@ body {
 }
 
 .header .header-button {
- 
 }
 
 /* CSS */
@@ -260,6 +259,12 @@ body {
   color: var(--white);
 }
 
+.main .card .card-info5 {
+  background-color: var(--new_bg_card4_1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: var(--white);
+}
+
 .main .card .card-info .card-info-images {
   display: flex;
   align-items: center;
@@ -332,6 +337,53 @@ body {
   /* border-radius: 4px; */
 }
 
+.main .card4 {
+  position: relative;
+}
+
+.main .card4 .card-button-slide {
+  position: absolute;
+  bottom: -90px;
+  left: 450px;
+  /* background-color: var(--white); */
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.main .card4 #button-slide-btn {
+  cursor: pointer;
+}
+
+.button-34 {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+
+
+
+
+.main .card5 {
+  display: none;
+}
+
 .footer {
   background-color: var(--new_bg_1);
   padding: 10px;
@@ -341,11 +393,21 @@ body {
   color: var(--white);
   font-family: monospace;
   font-size: 1.4rem;
+  text-align: center;
 }
 
-
 @media (min-width: 600px) {
-  .main .card4 .card-media .card-media-links{
+  .main .card4 .card-media .card-media-links {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .main .card-button-slide {
+    display: none;
+  }
+
+  .main .card5 {
     display: none;
   }
 }
@@ -397,7 +459,8 @@ body {
     border: 0;
     border-radius: 6px;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+      rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
@@ -448,7 +511,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 20px;
   }
-  .main .card .card-info .card-info-images{
+  .main .card .card-info .card-info-images {
   }
   .main .card .card-info .card-info-images a img {
     max-width: 30px;
@@ -486,12 +549,168 @@ body {
     width: 280px;
     height: 600px;
   }
-  .main .card4 .card-media .card-media-links{
+  .main .card4 .card-media .card-media-links {
     display: flex;
     gap: 10px;
     padding: 10px;
   }
   .main .card4 .card-media .card-img4 {
-   max-width: 30px;
+    max-width: 30px;
+  }
+
+  .main .card5 {
+    display: none;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width:900px) {
+  .grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+  }
+  .header .header-text {
+    display: grid;
+    gap: 20px;
+    align-self: center;
+    padding: 50px 25px;
+  }
+  .header .header-text .header-title {
+    font-family: Merriweather-Bold;
+    max-width: 20ch;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .header .header-text .header-description {
+    font-family: Lato-Regular;
+    font-size: 1.5rem;
+    font-weight: 100;
+    width: 30ch;
+    text-align: center;
+  }
+  .header .header-image {
+    display: none;
+  }
+  .button-29 {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(
+      100% 100% at 100% 0,
+      #5adaff 0,
+      #5468ff 100%
+    );
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+      rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+      rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    background-color: var(--title);
+    padding: 60px;
+    gap: 60px;
+  }
+  .main .card {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white);
+    border-radius: 4px;
+    font-family: Merriweather-Regular;
+    padding: 3px;
+  }
+  .main .card .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  .main .card .card-info .card-info-images {
+  }
+  .main .card .card-info .card-info-images a img {
+    max-width: 30px;
+    background-color: var(--white);
+  }
+  .main .card .card-info .card-title {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+  }
+  .main .card .card-info .card-description {
+    width: 25ch;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    line-height: 1.4;
+  }
+  .main .card1 .card-media {
+    display: none;
+  }
+  .main .card2 .card-media {
+    display: none;
+  }
+  .main .card3 .card-media {
+    display: none;
+  }
+  .main .card4 .card-info {
+    /* display: none; */
+  }
+  .main .card4 .card-media {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .card4 .card-media .card-media-video {
+    width: 280px;
+    height: 600px;
+  }
+  .main .card4 .card-media .card-media-links {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+  .main .card4 .card-media .card-img4 {
+    max-width: 30px;
+  }
+
+  .main .card5 {
+    display: none;
   }
 }

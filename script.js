@@ -10,4 +10,17 @@ function typeWriter() {
   }
 }
 
-ScrollReveal().reveal(".card", { delay: 5000 });
+var ativo = 0;
+
+function ValidaPermissao() {
+  let foo = prompt("Senha");
+  var slide = document.getElementById("card-slide");
+  var button = document.getElementById("button-slide");
+
+  if (foo == "senha") {
+    button.style.display = "none";
+    slide.style.display = "block";
+  } else if (foo != "admin") {
+    window.alert("Senha invalida!");
+  }
+}
