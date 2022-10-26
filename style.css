@@ -423,25 +423,25 @@ body {
   .header {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 50px;
+    /* gap: 40px;
+    padding: 50px; */
   }
   .header .header-text {
     display: grid;
     gap: 20px;
-    align-self: center;
-    padding: 50px 25px;
+    /* align-self: center;
+    padding: 50px 25px; */
   }
   .header .header-text .header-title {
-    font-family: Merriweather-Bold;
+    /* font-family: Merriweather-Bold; */
     max-width: 20ch;
-    text-align: center;
-    font-size: 2rem;
+    /* text-align: center;
+    font-size: 2rem; */
   }
   .header .header-text .header-description {
-    font-family: Lato-Regular;
+    /* font-family: Lato-Regular;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 100; */
     width: 30ch;
     text-align: center;
   }
@@ -485,15 +485,16 @@ body {
     font-size: 18px;
   }
   .main {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     background-color: var(--title);
     padding: 60px;
     gap: 60px;
+     
   }
+
   .main .card {
     display: flex;
     justify-content: space-around;
