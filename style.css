@@ -253,6 +253,16 @@ body {
   color: var(--white);
 }
 
+.main .card .card-info6 {
+  background-color: #37a870;
+  color: var(--white);
+}
+
+.main .card .card-info7 {
+  background-color: #5699c0;
+  color: var(--white);
+}
+
 .main .card .card-info4 {
   background-color: var(--new_bg_card4_1);
   border: 1px solid rgba(0, 0, 0, 0.2);

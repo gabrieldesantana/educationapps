@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Bora lá, fazer um melhor uso do seu tempo?";
+var txt = "Bora lá, fazer um melhor uso do seu tempo e estudos?";
 var speed = 60;
 
 function typeWriter() {
